@@ -48,12 +48,6 @@ const router = createRouter({
             name: 'articles-page',
             component: () => import('@/views/articles/Index.vue')
         },
- {
-            path: '/test',
-            name: 'test-page',
-            component: () => import('@/views/Test.vue')
-        },
-
     ]
 })
 
