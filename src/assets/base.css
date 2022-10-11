@@ -1,0 +1,89 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --black: #000;
+  --charcoal-grey: #373a3c;
+  --pinkish-grey: #e7cecd;
+  --brick: #cb2e25;
+  --warm-grey: #707070;
+  --light-grey-green: #d5e6c7;
+  --military-green: #4b713d;
+  --light-green: #e2eed8;
+  --brown: #9f4f48;
+  --pale-red: #d9534f;
+  --red-light: #efdfdf;
+  --white-15: rgba(255, 255, 255, 0.15);
+  --dark-sky-blue: #5bc0de;
+  --blue: #1c7cd5;
+  --silver: #eceeef;
+  --gunmetal: #55595c;
+}
+
+
+
+
+#app {
+  min-height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src:url('fonts/helvetica-neue/HelveticaNeue-Medium.woff2') format("woff2"),
+  url('fonts/helvetica-neue/HelveticaNeue-Medium.woff') format("woff"),
+  url('fonts/helvetica-neue/HelveticaNeue-Medium.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Text-Style-2 {
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.Text-Style-3 {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--charcoal-grey);
+}
+
+.Text-Style {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--charcoal-grey);
+}
+body {
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
