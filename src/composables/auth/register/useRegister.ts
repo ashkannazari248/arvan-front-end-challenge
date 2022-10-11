@@ -41,6 +41,7 @@ export const useRegister = () => {
                 if (response?.user?.token) {
                     await AuthStore.setUser(response.user)
                     await Storage().setCookie('cookieToken', response.user.token, '1d')
+                    await Storage().setLocalStorage('user', JSON.stringify(response.user))
                     showToast({message: `Welcome ${response.user.username}`, type: ToastEnum.success})
                     await router.push('/')
                 }
