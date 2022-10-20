@@ -4,7 +4,7 @@ import LayoutDefault from "@/layouts/LayoutDefault.vue";
 import {useRoute} from "vue-router";
 import {computed, reactive} from "vue";
 import AppTextInput from "@/components/AppTextInput.vue";
-import {Form,Field} from "vee-validate";
+import {Form} from "vee-validate";
 import * as Yup from "yup";
 
 import {ToastEnum} from "@/composables/toast/Toast.interface";
@@ -73,7 +73,7 @@ const onSubmit = (values) => {
       </div>
 
       <div class="mt-3">
-        <button class="btn px-3 btn-primary">Submit</button>
+        <button type="submit" class="btn px-3 btn-primary">Submit</button>
       </div>
     </Form>
 
